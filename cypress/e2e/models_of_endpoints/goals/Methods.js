@@ -1,6 +1,6 @@
 
 export const createGoal = (goalName) => {
-    return cy.sendRequest('team/90151253599/goal', 'POST', {name: goalName});
+    return cy.sendRequest('team/90151255813/goal', 'POST', {name: goalName});
 }
 
 export const createGoalWithInvalidTeamId = (goalName, teamId) => {
@@ -8,7 +8,7 @@ export const createGoalWithInvalidTeamId = (goalName, teamId) => {
 }
 
 export const createGoalWithMissingToken = (goalName, token) => {
-    return cy.sendRequestWithoutAuthorization('team/90151253599/goal', 'POST', {name: goalName}, token);
+    return cy.sendRequestWithoutAuthorization('team/90151255813/goal', 'POST', {name: goalName}, token);
 }
 
 export const updateGoalWithNotExistedToken = (goalId, updatedGoalName, token) => {
@@ -36,7 +36,7 @@ export const deleteGoal = (goalId) => {
 }
 
 export const getGoals = () => {
-    return cy.sendRequest('team/90151253599/goal', 'GET');
+    return cy.sendRequest('team/90151255813/goal', 'GET');
 }
 
 export const getGoalsWithInvalidTeamId = (teamId) => {
@@ -44,6 +44,6 @@ export const getGoalsWithInvalidTeamId = (teamId) => {
 }
 
 export const getGoalsWithoutAuthorization = (token) => {
-    return cy.sendRequestWithoutAuthorization('team/90151253599/goal', 'GET', token);
+    return cy.sendRequestWithoutAuthorization('team/90151255813/goal', 'GET', token);
 }
 
