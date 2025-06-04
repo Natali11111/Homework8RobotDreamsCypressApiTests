@@ -29,7 +29,7 @@ Cypress.Commands.add('sendRequest', (endpoint, method, body = null) => {
         url: endpoint,
         method: method,
         headers: {
-            Authorization: 'pk_200450570_VYZ446IXI5CHUBKP6N5OCPPTUS5NRF9T',
+            Authorization: 'pk_200574558_R4ZI5KE0LN5TZPC87BCRGWD6SZ0DKJFX',
             'Content-Type': 'application/json',
         },
         failOnStatusCode: false,
